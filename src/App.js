@@ -19,7 +19,7 @@ function App() {
   return (
     <div className="App">
       <NewTodoForm add={add}/>
-      <TodoList todos={list} deleteTask={deleteTodo} />
+      <TodoList todos={list} deleteTodo={deleteTodo} />
     </div>
   );
 }
