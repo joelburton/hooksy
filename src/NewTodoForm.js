@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 
-function NewTodoForm({add}) {
+const NewTodoForm = React.memo(({add}) => {
   const [data, setData] = useState({title: "", body: ""});
 
   function update(e) {
@@ -20,6 +20,6 @@ function NewTodoForm({add}) {
       <button>Save</button>
     </form>
   );
-}
+});
 
 export default NewTodoForm;
